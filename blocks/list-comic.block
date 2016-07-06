@@ -1,0 +1,22 @@
+<div class="sqs-row list-comic">
+  <div class="sqs-col-5">
+    <div class="sqs-block">
+      <div class="sqs-block-content">
+        {.main-image?}
+          <a href="{fullUrl}"><img src="{fullUrl}?format=300w"></a>
+        {.end}    
+      </div>
+    </div>
+  </div>
+  <div class="sqs-col-7">
+    <div class="sqs-block">
+      <div class="sqs-block-content">
+        <h1 class="title no-lead">
+          <a href="{fullUrl}">{title}</a>
+        </h1>
+        <p class="byline">by {author.displayName} on {publishOn|date %B %e, %Y}</p>
+        <p>{@|comment-link}</p>
+      </div>
+    </div>
+  </div>
+</div>

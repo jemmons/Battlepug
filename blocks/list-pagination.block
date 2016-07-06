@@ -1,0 +1,29 @@
+<div id="transport" class="list">
+  <ul>
+    <li>
+      {.if nextPage}
+        <a href="{nextPageUrl}&amp;list=true">
+          <span class="icon">&#9664;</span>
+          Older
+        </a>
+      {.or}
+        <a class="disabled">
+          <span class="icon">&#9664;</span>
+          Older
+        </a>
+      {.end}
+    </li>
+    <li>&nbsp;</li>
+    <li>
+      {.if prevPage}
+        <a href="{prevPageUrl}&amp;list=true">
+          Newer <span class="icon">&#9654;</span>
+        </a>
+      {.or}
+        <a class="disabled">
+          Newer <span class="icon">&#9654;</span>
+        </a>      
+      {.end}
+    </li>
+  </ul>
+</div>

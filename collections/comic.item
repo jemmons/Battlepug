@@ -1,0 +1,11 @@
+{.section item}
+{@|apply comic.block}
+{.end}
+
+{.section pagination}
+{@|apply item-pagination.block}
+{.end}
+
+<div id="bumper"></div>
+
+{@|apply post.block}

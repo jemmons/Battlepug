@@ -1,0 +1,7 @@
+{.main-image?}  
+  <div id="comic">
+    <div class="page">
+      <img {@|image-meta} />
+    </div>
+  </div>
+{.end}

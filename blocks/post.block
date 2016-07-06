@@ -1,0 +1,32 @@
+<div class="page" id="post">
+  <div class="left">
+    <squarespace:block-field id="leftComicSidebar" columns="1"/>
+  </div>
+  <div class="right">
+    <squarespace:block-field id="rightComicSidebar" columns="1"/>
+  </div>  
+  
+  <div class="main">
+    <article id="post-{item.id}" class="{item|item-classes}">  
+      <h1 class="title no-lead">
+        <a href="{item.fullUrl}" class="no-decoration">{item.title}</a>
+      </h1>
+      <p class="byline">by {item.author.displayName} on {item.publishOn|date %B %e, %Y}</p>
+      
+      <div class="post-body">
+        {item.body}
+      </div>
+
+      <div class="post-social">
+        {item|social-button}
+        <a href="/comic/?format=rss" id="subscribe-button">
+          <span>Subscribe</span>
+        </a>
+      </div>
+    </article>
+    
+    <div id="comments">
+      {item|comments}
+    </div>
+  </div>
+</div>

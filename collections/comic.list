@@ -1,0 +1,45 @@
+<script>
+function params(){
+  var tokens = window.location.search.substr(1).split("&");
+  var params = {};
+  for(var c=0; c<tokens.length; c++){
+    var couple = tokens[c].split("=");
+    params[couple[0]] = couple[1];
+  }
+  return params;
+}
+
+function shouldRedirect(){
+  return ! params()['list'];
+}
+</script>
+
+<div id="comic" class="list">
+  {.section pagination}
+    {@|apply list-pagination.block}
+  {.end}
+  
+  <div class="page">
+    <div class="left sqs-layout sqs-grid-12">
+      {.repeated section items}
+        <script>
+          if({@index} == 1 && shouldRedirect()){
+            window.location.href = '{fullUrl}';
+          }
+        </script>    
+          {@|apply list-comic.block}
+      {.end}
+    </div>
+    <div class="right">
+      <squarespace:block-field id="comicListSidebar" columns="1">
+    </div>
+  </div>
+  
+  <div class="clear">
+    {.section pagination}
+      {@|apply list-pagination.block}
+    {.end}  
+  </div>
+</div>
+<div id="bumper"></div>
+

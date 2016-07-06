@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    {squarespace-headers}
+  </head>
+  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
+    <header id="header">
+      <div class="page">
+        <div class="qr logo">
+          {.section item}
+            {@|social-button}
+          {.end}
+          <a href="/comic/?format=rss" id="subscribe-button">
+            <span>Subscribe</span>
+          </a>
+        </div>
+        <div class="logo">
+          <a href="/"><img src="/assets/logo.png" alt="BATTLEPUG"></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- before main content -->
+    {squarespace.main-content}
+    <!-- after main content -->
+
+    <footer id="footer" class="clear">
+      &copy;2011&ndash;<script>document.write(new Date().getFullYear());</script> Mike Norton | Powered by Squarespace
+    </footer>
+
+    {squarespace-footers}
+  </body>
+</html> 

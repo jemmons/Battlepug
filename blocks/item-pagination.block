@@ -1,0 +1,62 @@
+<div id="transport">
+  <ul>
+    <li>
+      {.if nextItem}
+        <a href="/comic/first">
+          <span class="icon">&#9664;&#9664;</span><br>
+          First
+        </a>
+      {.or}
+        <a class="disabled">
+          <span class="icon">&#9664;&#9664;</span><br>
+          First
+        </a>            
+      {.end}
+    </li>
+    <li>
+      {.section nextItem}
+        <a href="{fullUrl}">
+          <span class="icon">&#9664;</span><br>
+          Previous
+        </a>
+      {.or}
+        <a class="disabled">
+          <span class="icon">&#9664;</span><br>
+          Previous
+        </a>
+      {.end}
+    </li>
+    <li>
+      <a href="/comic/?list=true">
+        <span class="icon" style="font-size:30px;">&#9650;</span><br>
+        List
+      </a>
+    </li>
+    <li>
+      {.section prevItem}
+        <a href="{fullUrl}">
+          <span class="icon">&#9654;</span><br>
+          Next
+        </a>
+      {.or}
+        <a class="disabled">
+          <span class="icon">&#9654;</span><br>
+          Next
+        </a>      
+      {.end}
+    </li>
+    <li>
+      {.if prevItem}
+        <a href="/">
+          <span class="icon">&#9654;&#9654;</span><br>
+          Latest
+        </a>
+      {.or}
+        <a class="disabled">
+          <span class="icon">&#9654;&#9654;</span><br>
+          Latest
+        </a>        
+      {.end}
+    </li>
+  </ul>
+</div>
