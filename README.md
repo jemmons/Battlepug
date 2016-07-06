@@ -7,7 +7,7 @@ Next thing: this isn't your typical SquareSpace template. SquareSpace doesn't of
 
 In the mean time, intrepid folk with SquareSpace developer accounts can clone this repository and push it to their sites. You should get a functioning copy of [battlepug.com](http://battlepug.com) — *sans* all the content, of course.
 
-If you have pressing questions about how to do a thing, create an issue here, and I'll try to get to that first.
+If you have pressing questions about how to do a thing, [create an issue](https://github.com/jemmons/Battlepug/issues) and I'll try to get to that first.
 
 Thanks for your interest, your patience, and your love of the pug.
 
